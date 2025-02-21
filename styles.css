@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.list-hover {
+    @apply hover:text-gray-700 hover:border-b-orange-700 hover:border-b-2 
+}
+

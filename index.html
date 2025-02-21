@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="output.css" />
+	</head>
+	<body>
+		<div class="home-page overflow-clip">
+			<div class="home-page-child">
+				<div class="part-1 font-sans relative h-fit w-full bg-center bg-cover bg-no-repeat box-border">
+					<img src="/img/pexels-yaroslav-shuraev-1834399.jpg" class="bg-cover w-[100%] h-[80vh]" />
+					<div class="absolute flex flex-col justify-start h-full top-0 w-full px-5 gap-20 md:px-20 sm:px-10">
+						<div
+							class="part-1-nav w-full flex font-semibold px-5 flex-nowrap justify-between align-middle mt-7"
+						>
+							<div class="logo">
+								<a><img src="/img/travelogo.webp" /></a>
+							</div>
+							<div class="links hidden w-fit items-center md:flex">
+								<ul
+									class="flex flex-row gap-3 text-lg capitalize items-center font-semibold text-white"
+								>
+									<li class="h-fit text-2xl px-3 py-1 transition duration-300 ease-in-out list-hover">
+										<a>home</a>
+									</li>
+									<li class="h-fit text-2xl px-3 py-1 transition duration-300 ease-in-out list-hover">
+										<a>about</a>
+									</li>
+									<li class="h-fit text-2xl px-3 py-1 transition duration-300 ease-in-out list-hover">
+										<a>menu</a>
+									</li>
+									<li class="h-fit text-2xl px-3 py-1 transition duration-300 ease-in-out list-hover">
+										<a>contact</a>
+									</li>
+								</ul>
+							</div>
+							<div class="nav-calltoaction text-xl hidden md:block">
+								<a href="#"
+									><div class="bg-[#DF6951] h-full w-full p-4 text-white px-7 rounded">
+										Get in Touch
+									</div></a
+								>
+							</div>
+							<div class="phone-tab-nav md:hidden h-[100%] w-[50%] flex justify-end items-center">
+								<a href="#" onclick="toggleSidebar()" class="text-white hover:text-black"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="40px"
+										viewBox="0 -960 960 960"
+										width="40px"
+										fill="currentColor"
+									>
+										<path
+											d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div
+							id="sidebar"
+							class="sidenav h-[100%] w-[70%] bg-[#DF6951] bg-opacity-20 absolute self-end right-0 backdrop-blur-md z-10 hidden md:hidden"
+						>
+							<div class="sidenav-wrapper relative h-[100%] w-[100%]">
+								<a
+									href="#"
+									class="p-4 absolute top-0 right-0 text-white hover:text-black"
+									onclick="toggleSidebar()"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										height="40px"
+										viewBox="0 -960 960 960"
+										width="40px"
+										fill="currentColor"
+									>
+										<path
+											d="M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z"
+										/>
+									</svg>
+								</a>
+
+								<div
+									class="absolute w-[100%] h-[50%] top-[10%] font-bold text-white capitalize flex justify-center"
+								>
+									<ul class="flex flex-col justify-around">
+										<li
+											class="h-fit text-2xl px-3 py-4 transition duration-300 ease-in-out list-hover"
+										>
+											<a>home</a>
+										</li>
+										<li
+											class="h-fit text-2xl px-3 py-4 transition duration-300 ease-in-out list-hover"
+										>
+											<a>about</a>
+										</li>
+										<li
+											class="h-fit text-2xl px-3 py-4 transition duration-300 ease-in-out list-hover"
+										>
+											<a>menu</a>
+										</li>
+										<li
+											class="h-fit text-2xl px-3 py-4 transition duration-300 ease-in-out list-hover"
+										>
+											<a>contact</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="part-1-hero flex flex-col gap-8 justify-around my-auto">
+								<div class="hero-title font-bold text-white">
+									<h1 class="text-4xl sm:text-5xl md:text-7xl">
+										No matter where <br />you’re going to, <br />we’ll take you there
+									</h1>
+								</div>
+								<div
+									class="hero-calltoaction flex items-center gap-4 py-4 px-5 rounded text-white font-semibold w-fit h-fit bg-white/30 backdrop-blur-sm mt-20"
+								>
+									<div class="hero-calltoaction-1 border-r-[2px] px-2">Where to?</div>
+									<div class="hero-calltoaction-2 border-r-[2px] px-2">Travel Type</div>
+									<div class="hero-calltoaction-3 border-r-[2px] px-2">Where to?</div>
+									<div class="hero-calltoaction-4">
+										<a href="#" class="bg-white text-black py-[4px] px-4 rounded">Submit</a>
+									</div>
+								</div>
+								<div class="hero-feedback flex justify-start flex-nowrap items-center gap-5">
+									<div class="hero-feedback-img">
+										<img src="/img/landingpeople.webp" class="w-50%" />
+									</div>
+									<div class="hero-feedback-text text-white font-semibold text-sm w-50% md:text-lg">
+										2,500 people booked Tommorowland Event in last 24 hours
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ----PART 02 -->
+
+				<div class="part-2">
+					<div class="part-2-child flex flex-wrap justify-evenly w-full box-border m-auto my-4 gap-4">
+						<div
+							class="hover:shadow-lg rounded-md grayscale h-[150px] w-[150px] flex justify-center items-center max-w-[25%]"
+						>
+							<img alt="airline01" src="/img/airlines/american-airlines-2.svg" class="h-[150px] w-min" />
+						</div>
+						<div
+							class="hover:shadow-lg rounded-md grayscale h-[150px] w-[150px] flex justify-center items-center max-w-[25%]"
+						>
+							<img alt="airline02" src="/img/airlines/emirates-airlines.svg " class="h-[150px] w-min" />
+						</div>
+						<div
+							class="hover:shadow-lg rounded-md grayscale h-[150px] w-[150px] flex justify-center items-center max-w-[25%]"
+						>
+							<img
+								alt="airline03"
+								src="/img/airlines/ethiopian-airlines.svg"
+								class="h-[150px] w-[150px]"
+							/>
+						</div>
+						<div
+							class="grayscale h-[150px] w-[150px] flex justify-center items-center min-w-[30%] md:min-w-[10%] hover:shadow-lg rounded-md"
+						>
+							<img
+								alt="airline04"
+								src="/img/airlines/southwest-airlines-4.svg"
+								class="h-[150px] w-min col-span-2"
+							/>
+						</div>
+						<div
+							class="hover:shadow-lg rounded-md grayscale h-[150px] w-[150px] flex justify-center items-center min-w-[30%] md:min-w-[10%]"
+						>
+							<img
+								alt="airline05"
+								src="/img/airlines/united-airlines-7.svg"
+								class="h-[150px] w-min col-span-2"
+							/>
+						</div>
+					</div>
+				</div>
+				<!-- ----PART 03 -->
+				<div class="part-3 w-screen h-fit my-7 p-0 box-border overflow-clip">
+					<div class="par-3-child h-auto px-5 sm:px-10 md:px-20">
+						<div class="child-3-flex flex flex-wrap flex-col justify-center items-center gap-10">
+							<div class="part3-title-dsc flex flex-wrap flex-col justify-center items-center gap-3">
+								<div class="part3-title1 w-full">
+									<h2 class="uppercase text-center text-2xl font-semibold text-[#DF6951]">
+										category
+									</h2>
+								</div>
+								<div class="part3-title2 w-full">
+									<h3 class="text-5xl font-bold text-[#172554] text-center">
+										We Offer Best Services
+									</h3>
+								</div>
+							</div>
+							<div
+								class="part3-card w-[100%] h-max grid grid-cols-1 grid-rows-[auto] gap-6 sm:grid-cols-2 sm:gap-6 md:grid-cols-4"
+							>
+								<div
+									class="cards-part3 flex flex-col gap-4 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part3-cards-img">
+										<img src="/img/cards/travel.jpg" class="h-[150px] aspect-square" />
+									</div>
+									<div class="part3-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Guided Tours</h3>
+									</div>
+									<div class="part3-cards-dsc text-center text-base font-medium">
+										Explore the world with our expert guides and discover hidden gems in every
+										corner of the globe.
+									</div>
+								</div>
+								<div
+									class="cards-part3 flex flex-col gap-3 justify-center items-center hover:shadow-lg rounded-md p-3 m-3"
+								>
+									<div class="part3-cards-img">
+										<img src="/img/cards/planes.jpg" class="h-[150px] aspect-square" />
+									</div>
+									<div class="part3-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Best Flights Options</h3>
+									</div>
+									<div class="part3-cards-dsc text-center text-base font-medium">
+										Find the best flight deals and travel to your dream destinations with ease and
+										comfort.
+									</div>
+								</div>
+								<div
+									class="cards-part3 flex flex-col gap-3 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part3-cards-img">
+										<img src="/img/cards/religion.jpg" class="h-[150px] aspect-square" />
+									</div>
+									<div class="part3-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Religious Tours</h3>
+									</div>
+									<div class="part3-cards-dsc text-center text-base font-medium">
+										Experience the spiritual journey of a lifetime and connect with your faith in
+										the most sacred places on earth.
+									</div>
+								</div>
+								<div
+									class="cards-part3 flex flex-col gap-3 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part3-cards-img">
+										<img src="/img/cards/medical.jpg" class="h-[150px] aspect-square" />
+									</div>
+									<div class="part3-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Medical insurance</h3>
+									</div>
+									<div class="part3-cards-dsc text-center text-base font-medium">
+										Stay protected and secure with our comprehensive medical insurance plans that
+										cover all your healthcare needs.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ----PART 04 -->
+
+				<div class="part-4 w-screen h-[auto] p-0 mb-10 overflow-clip">
+					<div class="part4-child p-5 sm:p-10 md:p-20 w-full">
+						<div
+							class="part4-grid grid grid-cols-1 grid-rows-2 justify-center items-center sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1"
+						>
+							<div class="part4-grid-text">
+								<h2 class="uppercase text-2xl font-semibold text-[#DF6951]">fast & easy</h2>
+								<h3 class="mb-8 text-5xl font-bold text-[#172554]">
+									Get Your Favourite Resort Bookings
+								</h3>
+								<div class="part4-text-icon flex flex-row gap-4 mb-6">
+									<div class="part4-text-icon-icon p-2 bg-yellow-400 rounded-lg aspect-square">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="40px"
+											viewBox="0 0 24 24"
+											width="40px"
+											fill="black"
+										>
+											<path d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+											/>
+										</svg>
+									</div>
+									<div class="part4-text-icon-text">
+										<h4 class="text-xl font-bold text-gray-700">Find a Resort</h4>
+										<p>Find the perfect resort for your next trip.</p>
+									</div>
+								</div>
+								<div class="part4-text-icon flex flex-row gap-4 mb-6">
+									<div class="part4-text-icon-icon p-2 bg-[#DF6951] rounded-lg aspect-square">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="40px"
+											viewBox="0 0 24 24"
+											width="40px"
+											fill="white"
+										>
+											<path d="M0 0h24v24H0zm0 0h24v24H0zm0 0h24v24H0z" fill="none" />
+											<path
+												d="M20 0H4v2h16V0zM4 24h16v-2H4v2zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75c1.24 0 2.25 1.01 2.25 2.25s-1.01 2.25-2.25 2.25S9.75 10.24 9.75 9 10.76 6.75 12 6.75zM17 17H7v-1.5c0-1.67 3.33-2.5 5-2.5s5 .83 5 2.5V17z"
+											/>
+										</svg>
+									</div>
+									<div class="part4-text-icon-text">
+										<h4 class="text-xl font-bold text-gray-700">Book a Room</h4>
+										<p>Book a room at your favourite resort.</p>
+									</div>
+								</div>
+								<div class="part4-text-icon flex flex-row gap-4 mb-6">
+									<div class="part4-text-icon-icon p-2 bg-[#1D4ED8] rounded-lg aspect-square">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="40px"
+											viewBox="0 0 24 24"
+											width="40px"
+											fill="white"
+										>
+											<path d="M0 0h24v24H0V0z" fill="none" />
+											<path
+												d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"
+											/>
+											<circle cx="7.5" cy="14.5" r="1.5" />
+											<circle cx="16.5" cy="14.5" r="1.5" />
+										</svg>
+									</div>
+									<div class="part4-text-icon-text">
+										<h4 class="text-xl font-bold text-gray-700">Enjoy your Trip</h4>
+										<p>Enjoy your trip with your family.</p>
+									</div>
+								</div>
+							</div>
+							<div class="part4-grid-img flex justify-center bg-cover bg-center">
+								<img
+									src="/img/part-4/booking-01.png "
+									class="max-h-[430px] bg-cover bg-center shadow-lg"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ----PART 05 -->
+
+				<div class="part-5">
+					<div class="part-5-child h-[40vh] mb-10">
+						<div class="bg-[url(/img/part5.jpg)] bg-cover w-full h-[100%]">
+							<p
+								class="flex justify-center items-center h-[100%] text-white text-4xl capitalize font-serif sm:text-5xl md:text-7xl backdrop-blur-sm"
+							>
+								let's make your <br />next holiday amazing
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- ----PART 06 -->
+
+				<div class="part-6 w-screen h-[auto] p-0 mb-10 overflow-clip">
+					<div class="part4-child p-5 sm:p-10 md:p-20 w-full">
+						<div
+							class="part4-grid grid grid-cols-1 grid-rows-2 justify-center items-center sm:grid-cols-1 md:grid-cols-2 md:grid-rows-1"
+						>
+							<div class="part4-grid-text z-10">
+								<h2 class="uppercase text-2xl font-semibold text-[#DF6951]">Promotion</h2>
+								<h3 class="mb-8 text-5xl font-bold text-[#172554]">
+									We Provide You Best Europe Sightseeing Tours
+								</h3>
+								<p class="text-black p-1 text-lg mb-6">
+									Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a
+									laudantium internos. Non quis eius quo eligendi corrupti et fugiat nulla qui soluta
+									recusandae in maxime quasi aut ducimus illum aut optio quibusdam
+								</p>
+								<div
+									class="part4-text-icon flex flex-row flex-nowrap justify-center items-center gap-4 mb-6 z-10"
+								>
+									<img
+										src="/img/part-6/tower-1.jpg"
+										class="h-[100px] rounded-3xl md:h-[150px] hover:rotate-[45deg] transition ease-in duration-[0.3s]"
+									/>
+									<img
+										src="/img/part-6/tower-2.jpg"
+										class="h-[100px] rounded-3xl md:h-[150px] hover:rotate-[45deg] transition ease-in duration-[0.3s]"
+									/>
+									<img
+										src="/img/part-6/tower-3.jpg"
+										class="h-[100px] rounded-3xl md:h-[150px] hover:rotate-[45deg] transition ease-in duration-[0.3s]"
+									/>
+								</div>
+							</div>
+							<div class="part4-grid-img flex justify-center bg-cover bg-center z-[5]">
+								<img
+									src="/img/part-6/paris.jpg "
+									class="max-h-[430px] bg-cover bg-center shadow-[10px_0px_10px_0px_gray]"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- part - 7 -->
+				<div class="part-7 w-screen h-fit my-7 p-0 box-border overflow-clip">
+					<div class="part-7-child h-auto px-5 sm:px-10 md:px-20">
+						<div class="child-7-flex flex flex-wrap flex-col justify-center items-center gap-10">
+							<div class="part7-title-dsc flex flex-wrap flex-col justify-center items-center gap-3">
+								<div class="part7-title1 w-full">
+									<h2 class="uppercase text-center text-2xl font-semibold text-[#DF6951]">TRENDY</h2>
+								</div>
+								<div class="part7-title2 w-full">
+									<h3 class="text-5xl font-bold text-[#172554] text-center">
+										Our Trending Tour Packages
+									</h3>
+								</div>
+							</div>
+							<div
+								class="part7-card w-[100%] h-max grid grid-cols-1 grid-rows-[auto] gap-6 sm:grid-cols-1 sm:gap-6 md:grid-cols-3 justify-center items-center"
+							>
+								<div
+									class="cards-part7 flex flex-col gap-4 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part7-cards-img">
+										<div
+											class="relative hover:rotate-[30deg] transition duration-[0.3s] ease-linear"
+										>
+											<img
+												src="/img/part-7/switz.jpg"
+												class="h-[150px] bg-cover w-full rounded-xl"
+											/>
+											<div class="absolute bottom-2 left-[50%]">
+												<img
+													src="/img/part-7/switzerland.jpg"
+													class="h-[50px] aspect-square rounded-[50%] border-[5px] border-white border-solid translate-x-[-50%] hover:rotate-[30deg] transition duration-[0.3s] ease-linear hover:scale-[120%]"
+												/>
+											</div>
+										</div>
+									</div>
+									<div
+										class="part-7-rating flex flex-row flex-nowrap justify-between px-2 items-center gap-2"
+									>
+										<div class="part-7-calendericon flex flex-row">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g><rect fill="none" height="24" width="24" /></g>
+												<g>
+													<path
+														d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4,3.01,4.9,3.01,6L3,20c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V6C21,4.9,20.1,4,19,4z M19,20 H5V10h14V20z M19,8H5V6h14V8z M9,14H7v-2h2V14z M13,14h-2v-2h2V14z M17,14h-2v-2h2V14z M9,18H7v-2h2V18z M13,18h-2v-2h2V18z M17,18 h-2v-2h2V18z"
+													/>
+												</g>
+											</svg>
+											<div><p class="font-semibold capitalize">7days</p></div>
+										</div>
+
+										<div
+											class="part7-star-rating flex flex-nowrap justify-center items-center w-fit"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="part7-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Switzerland</h3>
+									</div>
+									<div class="part-7-location flex justify-center items-center flex-nowrap flex-row">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="24px"
+											viewBox="0 0 24 24"
+											width="24px"
+											fill="#172554"
+										>
+											<path d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+											/>
+										</svg>
+										<p class="capitalize font-medium">europe</p>
+									</div>
+									<div class="part7-cards-dsc text-center text-base font-medium">
+										Discover the beauty of Switzerland with our guided tours. Explore the stunning
+										landscapes and enjoy the local cuisine
+									</div>
+									<div class="part-7-cost flex justify-center items-center flex-nowrap flex-row">
+										<span class="font-bold text-[#172554]">$1500</span>
+										<p class="text-gray-600">/person</p>
+									</div>
+								</div>
+								<div
+									class="cards-part7 flex flex-col gap-4 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part7-cards-img">
+										<div
+											class="relative hover:rotate-[30deg] transition duration-[0.3s] ease-linear"
+										>
+											<img
+												src="/img/part-7/brazilia.jpg"
+												class="h-[150px] bg-cover w-full rounded-xl"
+											/>
+											<div class="absolute bottom-2 left-[50%]">
+												<img
+													src="/img/part-7/brasil.jpg"
+													class="h-[50px] aspect-square rounded-[50%] border-[5px] border-white border-solid translate-x-[-50%] hover:rotate-[30deg] transition duration-[0.3s] ease-linear hover:scale-[120%]"
+												/>
+											</div>
+										</div>
+									</div>
+									<div
+										class="part-7-rating flex flex-row flex-nowrap justify-between px-2 items-center gap-2"
+									>
+										<div class="part-7-calendericon flex flex-row">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g><rect fill="none" height="24" width="24" /></g>
+												<g>
+													<path
+														d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4,3.01,4.9,3.01,6L3,20c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V6C21,4.9,20.1,4,19,4z M19,20 H5V10h14V20z M19,8H5V6h14V8z M9,14H7v-2h2V14z M13,14h-2v-2h2V14z M17,14h-2v-2h2V14z M9,18H7v-2h2V18z M13,18h-2v-2h2V18z M17,18 h-2v-2h2V18z"
+													/>
+												</g>
+											</svg>
+											<div><p class="font-semibold capitalize">10days</p></div>
+										</div>
+
+										<div
+											class="part7-star-rating flex flex-nowrap justify-center items-center w-fit"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="part7-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Brazil</h3>
+									</div>
+									<div class="part-7-location flex justify-center items-center flex-nowrap flex-row">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="24px"
+											viewBox="0 0 24 24"
+											width="24px"
+											fill="#172554"
+										>
+											<path d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+											/>
+										</svg>
+										<p class="capitalize font-medium">South America</p>
+									</div>
+									<div class="part7-cards-dsc text-center text-base font-medium">
+										Experience the vibrant culture of Brazil with our guided tours. Visit the famous
+										landmarks and enjoy the local music and dance.
+									</div>
+									<div class="part-7-cost flex justify-center items-center flex-nowrap flex-row">
+										<span class="font-bold text-[#172554]">$2000</span>
+										<p class="text-gray-600">/person</p>
+									</div>
+								</div>
+								<div
+									class="cards-part7 flex flex-col gap-4 justify-center items-center p-3 m-3 hover:shadow-lg rounded-md"
+								>
+									<div class="part7-cards-img">
+										<div
+											class="relative hover:rotate-[30deg] transition duration-[0.3s] ease-linear"
+										>
+											<img
+												src="/img/part-7/egyptt.jpg"
+												class="h-[150px] bg-cover w-full rounded-xl"
+											/>
+											<div class="absolute bottom-2 left-[50%]">
+												<img
+													src="/img/part-7/egypt.png"
+													class="h-[50px] aspect-square rounded-[50%] border-[5px] border-white border-solid translate-x-[-50%] hover:rotate-[30deg] transition duration-[0.3s] ease-linear hover:scale-[120%] bg-cover"
+												/>
+											</div>
+										</div>
+									</div>
+									<div
+										class="part-7-rating flex flex-row flex-nowrap justify-between px-2 items-center gap-2"
+									>
+										<div class="part-7-calendericon flex flex-row">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g><rect fill="none" height="24" width="24" /></g>
+												<g>
+													<path
+														d="M19,4h-1V2h-2v2H8V2H6v2H5C3.89,4,3.01,4.9,3.01,6L3,20c0,1.1,0.89,2,2,2h14c1.1,0,2-0.9,2-2V6C21,4.9,20.1,4,19,4z M19,20 H5V10h14V20z M19,8H5V6h14V8z M9,14H7v-2h2V14z M13,14h-2v-2h2V14z M17,14h-2v-2h2V14z M9,18H7v-2h2V18z M13,18h-2v-2h2V18z M17,18 h-2v-2h2V18z"
+													/>
+												</g>
+											</svg>
+											<div><p class="font-semibold capitalize">8days</p></div>
+										</div>
+
+										<div
+											class="part7-star-rating flex flex-nowrap justify-center items-center w-fit"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												enable-background="new 0 0 24 24"
+												height="24px"
+												viewBox="0 0 24 24"
+												width="24px"
+												fill="#172554"
+											>
+												<g>
+													<path d="M0 0h24v24H0V0z" fill="none" />
+													<path d="M0 0h24v24H0V0z" fill="none" />
+												</g>
+												<g>
+													<path
+														d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"
+													/>
+												</g>
+											</svg>
+										</div>
+									</div>
+									<div class="part7-cards-title">
+										<h3 class="font-semibold text-xl text-[#172554]">Egypt</h3>
+									</div>
+									<div class="part-7-location flex justify-center items-center flex-nowrap flex-row">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											height="24px"
+											viewBox="0 0 24 24"
+											width="24px"
+											fill="#172554"
+										>
+											<path d="M0 0h24v24H0z" fill="none" />
+											<path
+												d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+											/>
+										</svg>
+										<p class="capitalize font-medium">Africa</p>
+									</div>
+									<div class="part7-cards-dsc text-center text-base font-medium">
+										Explore the ancient wonders of Egypt with our guided tours. Visit the pyramids
+										and temples and learn about the rich history of the pharaohs.
+									</div>
+									<div class="part-7-cost flex justify-center items-center flex-nowrap flex-row">
+										<span class="font-bold text-[#172554]">$1800</span>
+										<p class="text-gray-600">/person</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- part----8---- -->
+			<div class="part-8 w-screen h-fit my-7 p-0 box-border overflow-clip">
+				<div class="par-8-child h-auto px-5 sm:px-10 md:px-20">
+					<div class="child-8-flex flex flex-wrap flex-col justify-center items-center gap-10">
+						<div class="part8-title-dsc flex flex-wrap flex-col justify-center items-center gap-3">
+							<div class="part8-title1 w-full">
+								<h2 class="uppercase text-center text-2xl font-semibold text-[#DF6951]">category</h2>
+							</div>
+							<div class="part8-title2 w-full">
+								<h3 class="text-5xl font-bold text-[#172554] text-center mb-20">
+									We Offer Best Services
+								</h3>
+							</div>
+						</div>
+						<div class="part8-card w-[100%] h-max flex justify-center items-center">
+							<div
+								class="cards-part8 flex flex-col gap-3 justify-center items-center p-3 m-3 shadow-xl rounded-md w-[100%] sm:w-[60%] relative"
+							>
+								<div
+									class="part8-cards-img absolute  translate-x-[-50%] translate-y-[-50%] hover:rotate-[30deg] top-0 left-[50%] transition duration-[0.3s] ease-linear hover:scale-[120%]"
+								>
+									<img
+										src="/img/img_1_21706206730469.jpg"
+										class="h-[150px] aspect-square rounded-[50%] border-[5px] border-solid border-white outline-[5px] outline-black"
+									/>
+								</div>
+								<div class="part8-cards-title mt-[60px]">
+									<h3 class="font-semibold text-xl text-[#172554] capitalize">about the creator</h3>
+								</div>
+								<div class="part8-cards-dsc text-left text-base font-medium text-gray-500">
+									Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae
+									molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus
+									impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.
+								</div>
+								<div class="part8-cards-dsc text-left text-base font-medium">
+									<span class="font-bold capitalize text-gray-700">kahla akram</span> - Designer and
+									Front-end developer
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- ========== FOOTER ========== -->
+<footer class="mt-auto bg-gray-900 w-full">
+	<div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+	  <!-- Grid -->
+	  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+		<div class="col-span-full lg:col-span-1">
+		  <a class="flex-none text-xl font-semibold text-white focus:outline-none focus:opacity-80" href="#" aria-label="Brand"><img src="/img/travelogo.webp"></a>
+		</div>
+		<!-- End Col -->
+  
+		<div class="col-span-1">
+		  <h4 class="font-semibold text-gray-100">Product</h4>
+  
+		  <div class="mt-3 grid space-y-3">
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Pricing</a></p>
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Changelog</a></p>
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Docs</a></p>
+		  </div>
+		</div>
+		<!-- End Col -->
+  
+		<div class="col-span-1">
+		  <h4 class="font-semibold text-gray-100">Company</h4>
+  
+		  <div class="mt-3 grid space-y-3">
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">About us</a></p>
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Blog</a></p>
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Careers</a> <span class="inline-block ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">We're hiring</span></p>
+			<p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200" href="#">Customers</a></p>
+		  </div>
+		</div>
+		<!-- End Col -->
+  
+		<div class="col-span-2">
+		  <h4 class="font-semibold text-gray-100">Stay up to date</h4>
+  
+		  <form>
+			<div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2">
+			  <div class="w-full">
+				<label for="hero-input" class="sr-only">Subscribe</label>
+				<input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Enter your email">
+			  </div>
+			  <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+				Subscribe
+			  </a>
+			</div>
+			<p class="mt-3 text-sm text-gray-400">
+			  New UI kits or big discounts. Never spam.
+			</p>
+		  </form>
+		</div>
+		<!-- End Col -->
+	  </div>
+	  <!-- End Grid -->
+  
+	  <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
+		<div class="flex justify-between items-center">
+		  <p class="text-sm text-gray-400">
+			© 2025 Preline Labs.
+		  </p>
+		</div>
+		<!-- End Col -->
+  
+		<!-- Social Brands -->
+		<div>
+		  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+			<svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+			  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+			</svg>
+		  </a>
+		  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+			<svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+			  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+			</svg>
+		  </a>
+		  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+			<svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+			  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+			</svg>
+		  </a>
+		  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+			<svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+			  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+			</svg>
+		  </a>
+		  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 focus:outline-none focus:bg-white/10 disabled:opacity-50 disabled:pointer-events-none" href="#">
+			<svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+			  <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+			</svg>
+		  </a>
+		</div>
+		
+		<!-- End Social Brands -->
+	  </div>
+	</div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+		</div>
+		<script>
+			function toggleSidebar() {
+				document.getElementById("sidebar").classList.toggle("hidden");
+			}
+		</script>
+	</body>
+</html>
